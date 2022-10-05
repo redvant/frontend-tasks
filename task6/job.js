@@ -9,7 +9,7 @@ const job = data => {
   return new Promise((resolve, reject) => {
     isNotANumber(data, reject);
     isOddNumber(data, resolve);
-    evenNumber(resolve);
+    evenNumber(reject);
   })
 }
 
@@ -27,12 +27,20 @@ const isOddNumber = (data, resolve) => {
   }
 }
 
-const evenNumber = resolve => {
+const evenNumber = reject => {
   setTimeout(() => {
-    resolve("even");
+    reject("even");
   }, 2000);
 }
 
-job("not a number").catch(error => console.error(error))
-job(3).then(data => console.log(data))
-job(2).then(data => console.log(data))
+job("not a number")
+  .then(data => console.log(data))
+  .catch(error => console.error(error))
+
+job(3)
+  .then(data => console.log(data))
+  .catch(error => console.log(error))
+
+job(2)
+  .then(data => console.log(data))
+  .catch(error => console.log(error))
