@@ -1,0 +1,78 @@
+body {
+  margin: 0;
+  color: white;  
+  --wrapper-color: rgb(193, 228, 234);
+  --header-color: rgb(15, 20, 40);
+  --hero-color: rgb(76, 134, 198);
+  --menu-color: rgb(239, 60, 79);
+  --main-color: rgb(36, 52, 75);
+  --banner-color: rgb(255, 208, 104);
+  --footer-color: rgb(80, 187, 151);
+  text-align: center;
+}
+
+.wrapper {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--wrapper-color);
+}
+
+.header {
+  background-color: var(--header-color);
+  flex: 1 0 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero {
+  background-color: var(--hero-color);
+  flex: 1 0 35%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sections {
+  flex: 1 0 60%;
+  display: flex;
+}
+
+.menu {
+  background-color: var(--menu-color);
+  flex: 1 0 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  flex: 1 0 75%;
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  background-color: var(--main-color);
+  flex: 1 0 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner {
+  background-color: var(--banner-color);
+  color: black;
+  flex: 1 0 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer {
+  background-color: var(--footer-color);
+  flex: 1 1 10%;
+  width: 70%;
+}
