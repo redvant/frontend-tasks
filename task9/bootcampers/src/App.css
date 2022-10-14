@@ -1,0 +1,14 @@
+.App {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 50px repeat(3, 1fr);
+  gap: 20px 20px;
+  justify-items: center;
+  align-items: center;
+}
+
+.Title {
+  grid-column-start: span 2;
+}
