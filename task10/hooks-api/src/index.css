@@ -2,4 +2,6 @@ body {
   background-color: rgb(142, 186, 203);
   color: rgb(230, 230, 230);
   margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: small;
 }

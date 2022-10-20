@@ -21,86 +21,44 @@
     "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/79.png"
   },
   {
-    "id": 54,
-    "name": "Psyduck",
-    "types": [{"name": "Water"}],
-    "details": [{"name": "Height", "value": 8},{"name": "Weight", "value": 196}],    
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/54.png"
+    "id": 27,
+    "name": "Sandshrew",
+    "types": [{"name": "Ground"}],
+    "details": [{"name": "Height", "value": 6},{"name": "Weight", "value": 120}],    
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/27.png"
   },
   {
-    "id": 58,
-    "name": "Growlithe",
+    "id": 37,
+    "name": "Vulpix",
     "types": [{"name": "Fire"}],
-    "details": [{"name": "Height", "value": 7},{"name": "Weight", "value": 190}],    
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/58.png"
+    "details": [{"name": "Height", "value": 6},{"name": "Weight", "value": 99}],
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/37.png"
   },
   {
-    "id": 79,
-    "name": "Slowpoke",
-    "types": [{"name": "Water"},{"name": "Psychic"}],
-    "details": [{"name": "Height", "value": 12},{"name": "Weight", "value": 360}],    
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/79.png"
+    "id": 56,
+    "name": "Mankey",
+    "types": [{"name": "Figthing"}],
+    "details": [{"name": "Height", "value": 5},{"name": "Weight", "value": 280}],    
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/56.png"
   }, {
-    "id": 54,
-    "name": "Psyduck",
+    "id": 63,
+    "name": "Abra",
+    "types": [{"name": "Psychic"}],
+    "details": [{"name": "Height", "value": 9},{"name": "Weight", "value": 195}],    
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/63.png"
+  },
+  {
+    "id": 86,
+    "name": "Seel",
     "types": [{"name": "Water"}],
-    "details": [{"name": "Height", "value": 8},{"name": "Weight", "value": 196}],    
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/54.png"
+    "details": [{"name": "Height", "value": 11},{"name": "Weight", "value": 900}],    
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/86.png"
   },
   {
-    "id": 58,
-    "name": "Growlithe",
-    "types": [{"name": "Fire"}],
-    "details": [{"name": "Height", "value": 7},{"name": "Weight", "value": 190}],    
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/58.png"
-  },
-  {
-    "id": 79,
-    "name": "Slowpoke",
-    "types": [{"name": "Water"},{"name": "Psychic"}],
-    "details": [{"name": "Height", "value": 12},{"name": "Weight", "value": 360}],    
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/79.png"
-  },
-  {
-    "id": 54,
-    "name": "Psyduck",
-    "types": [{"name": "Water"}],
-    "details": [{"name": "Height", "value": 8},{"name": "Weight", "value": 196}],    
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/54.png"
-  },
-  {
-    "id": 58,
-    "name": "Growlithe",
-    "types": [{"name": "Fire"}],
-    "details": [{"name": "Height", "value": 7},{"name": "Weight", "value": 190}],    
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/58.png"
-  },
-  {
-    "id": 79,
-    "name": "Slowpoke",
-    "types": [{"name": "Water"},{"name": "Psychic"}],
-    "details": [{"name": "Height", "value": 12},{"name": "Weight", "value": 360}],    
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/79.png"
-  }, 
-  {
-    "id": 54,
-    "name": "Psyduck",
-    "types": [{"name": "Water"}],
-    "details": [{"name": "Height", "value": 8},{"name": "Weight", "value": 196}],    
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/54.png"
-  },
-  {
-    "id": 58,
-    "name": "Growlithe",
-    "types": [{"name": "Fire"}],
-    "details": [{"name": "Height", "value": 7},{"name": "Weight", "value": 190}],    
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/58.png"
-  },
-  {
-    "id": 79,
-    "name": "Slowpoke",
-    "types": [{"name": "Water"},{"name": "Psychic"}],
-    "details": [{"name": "Height", "value": 12},{"name": "Weight", "value": 360}],    
-    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/79.png"
+    "id": 92,
+    "name": "Gastly",
+    "types": [{"name": "Ghost"},{"name": "Poison"}],
+    "details": [{"name": "Height", "value": 13},{"name": "Weight", "value": 1}],    
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/92.png"
   }
 ]

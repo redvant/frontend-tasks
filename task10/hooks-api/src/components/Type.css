@@ -21,3 +21,18 @@
   --color: rgb(249, 121, 160);
 }
 
+.ground-type {
+  --color: rgb(230, 205, 134);
+}
+
+.figthing-type {
+  --color: rgb(205, 77, 96);
+}
+
+.ghost-type {
+  --color: rgb(141, 121, 173);
+}
+
+.poison-type {
+  --color: rgb(179, 102, 179);
+}
