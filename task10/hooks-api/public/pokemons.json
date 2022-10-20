@@ -1,0 +1,106 @@
+[
+  {
+    "id": 54,
+    "name": "Psyduck",
+    "types": [{"name": "Water"}],
+    "details": [{"name": "Height", "value": 8},{"name": "Weight", "value": 196}],    
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/54.png"
+  },
+  {
+    "id": 58,
+    "name": "Growlithe",
+    "types": [{"name": "Fire"}],
+    "details": [{"name": "Height", "value": 7},{"name": "Weight", "value": 190}],    
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/58.png"
+  },
+  {
+    "id": 79,
+    "name": "Slowpoke",
+    "types": [{"name": "Water"},{"name": "Psychic"}],
+    "details": [{"name": "Height", "value": 12},{"name": "Weight", "value": 360}],    
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/79.png"
+  },
+  {
+    "id": 54,
+    "name": "Psyduck",
+    "types": [{"name": "Water"}],
+    "details": [{"name": "Height", "value": 8},{"name": "Weight", "value": 196}],    
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/54.png"
+  },
+  {
+    "id": 58,
+    "name": "Growlithe",
+    "types": [{"name": "Fire"}],
+    "details": [{"name": "Height", "value": 7},{"name": "Weight", "value": 190}],    
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/58.png"
+  },
+  {
+    "id": 79,
+    "name": "Slowpoke",
+    "types": [{"name": "Water"},{"name": "Psychic"}],
+    "details": [{"name": "Height", "value": 12},{"name": "Weight", "value": 360}],    
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/79.png"
+  }, {
+    "id": 54,
+    "name": "Psyduck",
+    "types": [{"name": "Water"}],
+    "details": [{"name": "Height", "value": 8},{"name": "Weight", "value": 196}],    
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/54.png"
+  },
+  {
+    "id": 58,
+    "name": "Growlithe",
+    "types": [{"name": "Fire"}],
+    "details": [{"name": "Height", "value": 7},{"name": "Weight", "value": 190}],    
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/58.png"
+  },
+  {
+    "id": 79,
+    "name": "Slowpoke",
+    "types": [{"name": "Water"},{"name": "Psychic"}],
+    "details": [{"name": "Height", "value": 12},{"name": "Weight", "value": 360}],    
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/79.png"
+  },
+  {
+    "id": 54,
+    "name": "Psyduck",
+    "types": [{"name": "Water"}],
+    "details": [{"name": "Height", "value": 8},{"name": "Weight", "value": 196}],    
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/54.png"
+  },
+  {
+    "id": 58,
+    "name": "Growlithe",
+    "types": [{"name": "Fire"}],
+    "details": [{"name": "Height", "value": 7},{"name": "Weight", "value": 190}],    
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/58.png"
+  },
+  {
+    "id": 79,
+    "name": "Slowpoke",
+    "types": [{"name": "Water"},{"name": "Psychic"}],
+    "details": [{"name": "Height", "value": 12},{"name": "Weight", "value": 360}],    
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/79.png"
+  }, 
+  {
+    "id": 54,
+    "name": "Psyduck",
+    "types": [{"name": "Water"}],
+    "details": [{"name": "Height", "value": 8},{"name": "Weight", "value": 196}],    
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/54.png"
+  },
+  {
+    "id": 58,
+    "name": "Growlithe",
+    "types": [{"name": "Fire"}],
+    "details": [{"name": "Height", "value": 7},{"name": "Weight", "value": 190}],    
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/58.png"
+  },
+  {
+    "id": 79,
+    "name": "Slowpoke",
+    "types": [{"name": "Water"},{"name": "Psychic"}],
+    "details": [{"name": "Height", "value": 12},{"name": "Weight", "value": 360}],    
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/79.png"
+  }
+]

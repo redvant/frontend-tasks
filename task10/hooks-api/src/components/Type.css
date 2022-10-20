@@ -1,0 +1,23 @@
+.type {
+  background-color: var(--color);
+  display: inline-block;
+  min-width: 40px;
+  text-align: center;
+  padding: 4px;
+  border-radius: 5%;
+  margin-left: 5px;
+  color: aliceblue;
+}
+
+.water-type {
+  --color: rgb(124, 166, 243);
+}
+
+.fire-type {
+  --color: rgb(243, 153, 89);
+}
+
+.psychic-type {
+  --color: rgb(249, 121, 160);
+}
+
