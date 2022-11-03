@@ -1,11 +1,14 @@
 import Card from "./Card";
+import "./List.css"
 
-function List({ list }) {
+function List({ list, title }) {
+  const className = 'list ' + title.toLowerCase();
+
   return (
-    <div className="list">
-      <h4>Submitted</h4>
+    <div className={className}>
+      <h2>{title}</h2>
       {list.length > 0 ? (
-        list.map((person, index) => <Card person={person} key={index} />)
+        list.map((object, index) => <Card object={object} key={index} />)
       ) : (
         <p>Empty</p>
       )}

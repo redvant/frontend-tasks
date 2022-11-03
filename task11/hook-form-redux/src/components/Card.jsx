@@ -1,12 +1,13 @@
-import './Card.css'
+import "./Card.css";
 
-function Card({person: {name, age}}) {
+function Card({ object }) {
   return (
     <div className="card">
-      <div className="name">{name}</div>
-      <div className="age">{age}</div>
+      {Object.keys(object).map((param, index) => (
+        <div key={index}>{object[param]}</div>
+      ))}
     </div>
-  )
+  );
 }
 
-export default Card
+export default Card;
