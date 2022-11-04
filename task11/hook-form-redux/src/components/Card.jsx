@@ -3,7 +3,6 @@ import "./Card.css";
 import Dash from "../assets/dash-square.svg";
 
 function Card({ object, type }) {
-  // const className = "list " + type;
   const [cssClass, setCssClass] = useState("card");
 
   const handleMinimize = () => {
