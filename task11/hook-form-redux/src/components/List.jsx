@@ -7,10 +7,8 @@ function List({ list, title }) {
   return (
     <div className={className}>
       <h2>{title}</h2>
-      {list.length > 0 ? (
-        list.map((object, index) => <Card object={object} key={index} />)
-      ) : (
-        <p>Empty</p>
+      {list.length > 0 && (
+        list.map((object, index) => <Card object={object} key={index} type={title.toLowerCase()} />)
       )}
     </div>
   );

@@ -8,3 +8,9 @@
   grid-template-rows: 1fr;
   column-gap: 30px;
 }
+
+h2 {
+  padding-bottom: 5px;
+  margin: 10px 0 10px 0;
+  border-bottom: 1px solid;
+}
