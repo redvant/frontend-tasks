@@ -1,0 +1,10 @@
+.dashboard-container {
+  min-height: 100vh;
+  display: flex;
+}
+
+.content-container {
+  flex: 1 1 auto;
+  max-width: 100%;
+  text-align: center;
+}
