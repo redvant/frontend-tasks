@@ -4,9 +4,10 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Welcome from './pages/welcome/Welcome'
 import Dashboard from './pages/dashboard/Dashboard'
 import Error from './pages/error/Error'
-import './index.css'
-import "bootstrap-icons/font/bootstrap-icons.css";
 import Notifications from './pages/notifications/Notifications'
+import Posts from './pages/posts/Posts'
+import "bootstrap-icons/font/bootstrap-icons.css";
+import './index.css'
 
 const router = createBrowserRouter([
   {
@@ -18,6 +19,10 @@ const router = createBrowserRouter([
     path: "dashboard",
     element: <Dashboard />,
     children: [
+      {
+        path: "",
+        element: <Posts />
+      },
       {
         path: "notifications",
         element: <Notifications />

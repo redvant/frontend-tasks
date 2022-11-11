@@ -5,7 +5,7 @@ function Sidebar() {
   return (
     <div className="sidebar-container">
       <div className="title">
-        <h3>React Router</h3>
+        <h3>Posts</h3>
       </div>
       <hr />
       <ul className="links-list">
