@@ -1,0 +1,33 @@
+.post-container {
+  border: 1px solid black;
+  padding: 5px;
+  display: flex;
+  min-width: 300px;
+  flex: 1 1 20%;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  cursor: pointer;
+}
+
+.post-container:hover {
+  background-color: rgba(100, 108, 255, .3);
+}
+
+.post-title {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h3 {
+  font-weight: 700;
+}
+
+p {
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}

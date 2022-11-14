@@ -4,7 +4,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Welcome from './pages/welcome/Welcome'
 import Dashboard from './pages/dashboard/Dashboard'
 import Error from './pages/error/Error'
-import Notifications from './pages/notifications/Notifications'
+import CreatePost from './pages/createPost/CreatePost'
 import Posts from './pages/posts/Posts'
 import "bootstrap-icons/font/bootstrap-icons.css";
 import './index.css'
@@ -16,7 +16,7 @@ const router = createBrowserRouter([
     errorElement: <Error />
   },
   {
-    path: "dashboard",
+    path: "posts",
     element: <Dashboard />,
     children: [
       {
@@ -24,8 +24,8 @@ const router = createBrowserRouter([
         element: <Posts />
       },
       {
-        path: "notifications",
-        element: <Notifications />
+        path: "create",
+        element: <CreatePost />
       },
     ],
   }

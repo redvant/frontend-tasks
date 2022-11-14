@@ -1,0 +1,12 @@
+.create-container {
+ margin: 20px;
+}
+
+h2 {
+  font-size: 2.7rem;
+  margin-bottom: 25px;
+}
+
+.create-container hr {
+  border: 1px solid var(--black);
+}

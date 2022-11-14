@@ -5,7 +5,7 @@ function Sidebar() {
   return (
     <div className="sidebar-container">
       <div className="title">
-        <h3>Posts</h3>
+        <h3>Posts Manager</h3>
       </div>
       <hr />
       <ul className="links-list">
@@ -16,15 +16,15 @@ function Sidebar() {
           </Link>
         </li>
         <li>
-          <Link to={"/dashboard"}>
+          <Link to={"/posts"}>
           <i className="bi bi-speedometer2"></i>
             Dashboard
           </Link>
         </li>
         <li>
-          <Link to={"notifications"}>
-            <i className="bi bi-bell"></i>
-            Notifications
+          <Link to={"create"}>
+            <i className="bi bi-file-earmark-plus"></i>
+            Create Post
           </Link>
         </li>
       </ul>
