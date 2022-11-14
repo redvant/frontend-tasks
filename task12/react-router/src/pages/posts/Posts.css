@@ -2,8 +2,14 @@
   margin: 20px;
 }
 
-.posts-title hr {
+.main-container hr {
   border: 1px solid var(--black);
+}
+
+.posts-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .posts-container {
