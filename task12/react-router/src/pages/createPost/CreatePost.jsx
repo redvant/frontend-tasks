@@ -10,7 +10,6 @@ function CreatePost() {
   const {alerts, addAlert} = useAlerts();
 
   const submitData = (data) => {
-    console.log("Sending data: ", data);
     const createPost = async () => {
       let response = await fetch("https://jsonplaceholder.typicode.com/posts", {
         method: 'POST',
@@ -26,7 +25,6 @@ function CreatePost() {
       }
     };
     createPost();
-    // navigate("/posts");
   };
 
   const onCancel = (e) => {
