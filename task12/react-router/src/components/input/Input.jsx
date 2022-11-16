@@ -1,6 +1,6 @@
 import "./Input.css";
 
-function Input({ input: { label, type = "text", register, validations } }) {
+function Input({ input: { label, type = "text", register, validations} }) {
   const name = label.toLowerCase();
   return (
     <div className="input-container">

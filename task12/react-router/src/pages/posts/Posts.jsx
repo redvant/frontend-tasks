@@ -2,6 +2,8 @@ import { useState, useEffect } from "react";
 import Post from "../../components/post/Post";
 import DetailsModal from "../../components/detailsModal/DetailsModal";
 import useModal from "../../hooks/useModal";
+import useAlerts from "../../hooks/useAlerts";
+import Alerts from "../../components/alerts/Alerts";
 import SearchBar from "../../components/searchBar/SearchBar";
 import "./Posts.css";
 
@@ -9,6 +11,7 @@ function Posts() {
   const [posts, setPosts] = useState([]);
   const [searchPattern, setSearchPattern] = useState("");
   const { isShowing, toggle, modalData, setModalData } = useModal();
+  const {alerts, addAlert} = useAlerts();
 
   useEffect(() => {
     const fetchPosts = async () => {
@@ -36,7 +39,11 @@ function Posts() {
           method: "DELETE",
         }
       );
-      console.log(response);
+      if (response.status == 200){
+        addAlert({message: "Post deleted successfully", status: "success"})
+      }else {
+        addAlert({message: "There was an error deleting the post", status: "error"})
+      }
     };
     deletePostById(id);
     let newPosts = posts.filter((post) => post.id != id);
@@ -68,6 +75,7 @@ function Posts() {
         modalData={modalData}
         deletePost={deletePost}
       />
+      <Alerts alerts={alerts} />
     </div>
   );
 }

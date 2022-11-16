@@ -1,10 +1,13 @@
 import Form from "../../components/form/Form";
 import { useNavigate } from "react-router-dom";
-import Inputs from './Inputs'
+import useAlerts from "../../hooks/useAlerts";
+import Alerts from "../../components/alerts/Alerts";
+import Inputs from './Inputs';
 import "./CreatePost.css";
 
 function CreatePost() {
   const navigate = useNavigate();
+  const {alerts, addAlert} = useAlerts();
 
   const submitData = (data) => {
     console.log("Sending data: ", data);
@@ -16,10 +19,14 @@ function CreatePost() {
           'Content-type': 'application/json; charset=UTF-8',
         },
       });
-      console.log(response)
+      if (response.status == 201){
+        addAlert({message: "Post created successfully", status: "success"})
+      }else {
+        addAlert({message: "There was an error creating the post", status: "error"})
+      }
     };
     createPost();
-    navigate("/posts");
+    // navigate("/posts");
   };
 
   const onCancel = (e) => {
@@ -28,9 +35,8 @@ function CreatePost() {
   };
 
   const onError = (error) => {
-    console.error("Error: ",{input: error[0], message: error[1].message});
+    addAlert({message: `Error in ${error[0]}: ${error[1].message}`, status: "error"});
   }
-
   return (
     <div className="create-container">
       <div className="create-title">
@@ -44,6 +50,7 @@ function CreatePost() {
         handleError={onError}
         onCancel={onCancel}
       />
+      <Alerts alerts={alerts} />
     </div>
   );
 }

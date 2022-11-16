@@ -13,7 +13,7 @@ const Inputs = [
       required: "Field is required",
       maxLength: { value: 300, message: "Max length is of 300 characters" },
     },
-  },
+  }
 ];
 
 export default Inputs;

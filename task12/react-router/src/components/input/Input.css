@@ -29,3 +29,9 @@ input {
   border-style: solid;
   border: 1.5px solid var(--black);
 }
+
+.input-error {
+  margin: 5px 0;
+  color: crimson;
+  font-weight: 500;
+}

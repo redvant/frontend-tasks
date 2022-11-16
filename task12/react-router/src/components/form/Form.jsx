@@ -5,14 +5,17 @@ import "./Form.css";
 function Form({ submitData, handleError, actionText, inputs, onCancel }) {
   const {
     register,
+    reset,
     handleSubmit,
   } = useForm({ mode: "onSubmit", reValidateMode: "onSubmit" });
 
-  const onSubmit = (data) => submitData(data);
+  const onSubmit = (data) => {
+    submitData(data);
+    reset()
+  }
 
   const onError = (errors) =>
     Object.entries(errors).forEach((error) => handleError(error));
-
   return (
     <div className="form-container">
       <form onSubmit={handleSubmit(onSubmit, onError)} id={actionText}>
