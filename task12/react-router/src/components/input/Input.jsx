@@ -8,6 +8,7 @@ function Input({ input: { label, type = "text", register, validations} }) {
       {type === "textarea" ? (
         <textarea
           name={name}
+          role='textarea'
           {...register(name, { ...validations })}
         ></textarea>
       ) : (
