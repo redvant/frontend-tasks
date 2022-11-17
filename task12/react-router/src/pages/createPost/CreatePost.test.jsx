@@ -66,6 +66,5 @@ describe("CreatePost", () => {
   //   await userEvent.click(screen.getByRole('button', {
   //     name: /Cancel/i
   //   }))
-  //   await waitFor(() => expect(screen.getByText("Posts")).toBeInTheDocument())
   // });
 });
