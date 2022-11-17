@@ -4,6 +4,7 @@ import useAlerts from "../../hooks/useAlerts";
 import Alerts from "../../components/alerts/Alerts";
 import Inputs from './Inputs';
 import "./CreatePost.css";
+import fetch from 'cross-fetch'
 
 function CreatePost() {
   const navigate = useNavigate();
