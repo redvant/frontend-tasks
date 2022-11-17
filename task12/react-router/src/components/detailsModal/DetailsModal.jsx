@@ -12,6 +12,7 @@ const Modal = ({ isShowing, hide, modalData, deletePost }) =>
             aria-hidden
             tabIndex={-1}
             role="dialog"
+            data-testid="detailsModal"
           >
             <div className="modal">
               <div className="modal-body">

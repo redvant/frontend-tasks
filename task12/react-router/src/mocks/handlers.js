@@ -25,6 +25,21 @@ export const handlers = [
   rest.get("https://jsonplaceholder.typicode.com/posts", (req, res, ctx) => {
     return res(ctx.status(200), ctx.json(posts));
   }),
+  rest.delete(
+    "https://jsonplaceholder.typicode.com/posts/1",
+    (req, res, ctx) => {
+      return res(ctx.status(200));
+    }
+  ),
+  rest.delete(
+    "https://jsonplaceholder.typicode.com/posts/2",
+    (req, res, ctx) => {
+      return res(
+        ctx.status(404),
+        ctx.json({ errorMessage: "Error deleting post" })
+      );
+    }
+  ),
   rest.post(
     "https://jsonplaceholder.typicode.com/posts",
     async (req, res, ctx) => {

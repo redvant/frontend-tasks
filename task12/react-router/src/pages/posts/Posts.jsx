@@ -5,6 +5,7 @@ import useModal from "../../hooks/useModal";
 import useAlerts from "../../hooks/useAlerts";
 import Alerts from "../../components/alerts/Alerts";
 import SearchBar from "../../components/searchBar/SearchBar";
+import fetch from 'cross-fetch'
 import "./Posts.css";
 
 function Posts() {
@@ -40,14 +41,14 @@ function Posts() {
         }
       );
       if (response.status == 200){
+        let newPosts = posts.filter((post) => post.id != id);
+        setPosts(newPosts);
         addAlert({message: "Post deleted successfully", status: "success"})
       }else {
         addAlert({message: "There was an error deleting the post", status: "error"})
       }
     };
     deletePostById(id);
-    let newPosts = posts.filter((post) => post.id != id);
-    setPosts(newPosts);
     toggle();
   };
 
