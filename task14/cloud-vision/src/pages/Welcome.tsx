@@ -1,6 +1,7 @@
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
+import { Link } from "react-router-dom";
 // import "./Welcome.css";
 
 function Welcome() {
@@ -16,7 +17,9 @@ function Welcome() {
       <Typography variant="h2" align="center">
         Detection of text in images with AI
       </Typography>
-      <Button variant="contained">Let's start</Button>
+      <Link to={"detectText"} className="link">
+        <Button variant="contained">Let's start</Button>
+      </Link>
     </Box>
   );
 }
