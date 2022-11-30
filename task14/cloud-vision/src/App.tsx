@@ -1,13 +1,16 @@
-import { useState } from 'react'
-
+import CssBaseline from '@mui/material/CssBaseline';
+import { ThemeProvider } from '@mui/material/styles';
+import theme from './theme';
+import Welcome from "./pages/Welcome";
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <div className="App">
-      <h1>AI Text Detection</h1>
+      <ThemeProvider theme={theme}>
+        <CssBaseline />
+        <Welcome />
+      </ThemeProvider>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
