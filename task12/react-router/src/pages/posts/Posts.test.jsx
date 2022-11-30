@@ -3,7 +3,7 @@ import { render, screen, userEvent } from "../../utils/test-utils";
 import { waitFor } from '@testing-library/react'
 import { BrowserRouter } from 'react-router-dom'
 import Posts from "./Posts";
-import {posts as fetchedPosts, posts} from '../../mocks/handlers'
+import {posts as fetchedPosts } from '../../mocks/handlers'
 
 describe("Posts", () => {
   it("should render the Posts page", () => {
