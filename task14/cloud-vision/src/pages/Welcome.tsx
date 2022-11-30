@@ -11,11 +11,12 @@ function Welcome() {
       justifyContent="center"
       alignItems="center"
       minHeight="100vh"
+      gap="20px"
     >
       <Typography variant="h2" align="center">
         Detection of text in images with AI
       </Typography>
-      <Button variant="contained" color="primary">Let's start</Button>
+      <Button variant="contained">Let's start</Button>
     </Box>
   );
 }
