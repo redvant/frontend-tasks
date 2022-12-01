@@ -1,28 +1,12 @@
 import { Box, Typography, Button } from "@mui/material";
 import { useState } from "react";
 import { FileUploader } from "react-drag-drop-files";
+import useDropFiles from "../hooks/useDropFiles";
 
 const fileTypes = ["JPEG", "JPG", "PNG"];
 function DetectText() {
-  const [file, setFile] = useState<string | null>(null);
-
-  const handleChange = (file: File) => {
-    const reader = new FileReader();
-    reader.addEventListener(
-      "load",
-      () => {
-        // convert image file to base64 string
-        let image64 = reader.result;
-        if (typeof image64 === "string") {
-          setFile(image64);
-        }
-      },
-      false
-    );
-    if (file) {
-      reader.readAsDataURL(file);
-    }
-  };
+  
+  const {fileTypes, file, handleChange} = useDropFiles();
 
   return (
     <Box
