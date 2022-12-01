@@ -1,24 +1,36 @@
-import { useState } from 'react'
-import { RequestData, ResponseData } from "../services/ProcessImageInterface";
+import { useState } from "react";
+import {
+  RequestData,
+  DataResponses,
+  AiData,
+  ErrorResponse,
+  isErrorResponse,
+} from "../services/ProcessImageInterface";
 import fetchAiData from "../services/ProcessImage";
 
 const useProcessImageService = (file: string | null) => {
-  const [aiData, setAiData] = useState<ResponseData | null>(null);
+  const [aiData, setAiData] = useState<AiData | null>(null);
+  const [fetchError, setFetchError] = useState<ErrorResponse | null>(null);
 
   const handleProcessImage = async () => {
-    let data = createRequestData()
+    let data = createRequestData();
     if (data) {
-      let fetchedData = await fetchAiData(data)
-      setAiData(fetchedData.responses[0])
+      let fetchedData: DataResponses | ErrorResponse = await fetchAiData(data);
+      if (isErrorResponse(fetchedData)) {
+        setFetchError(fetchedData);
+      } else {
+        setAiData(fetchedData.responses[0]);
+      }
     }
-  }
+  };
 
-  const cleanupAiData = () => {
-    setAiData(null)
-  }
+  const cleanupFetchData = () => {
+    setAiData(null);
+    setFetchError(null);
+  };
 
   const createRequestData = () => {
-    if (typeof file === "string"){
+    if (typeof file === "string") {
       let base64Image = file.split(",")[1];
       let requestData: RequestData = {
         requests: [
@@ -33,18 +45,17 @@ const useProcessImageService = (file: string | null) => {
             },
           },
         ],
-      }
-      return requestData
+      };
+      return requestData;
     }
-  }
+  };
 
   return {
     aiData,
+    fetchError,
     handleProcessImage,
-    cleanupAiData,
-  }
-}
-
-
+    cleanupFetchData,
+  };
+};
 
 export default useProcessImageService;

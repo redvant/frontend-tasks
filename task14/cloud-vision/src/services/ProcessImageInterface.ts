@@ -30,7 +30,12 @@ export interface Image {
 //   ],
 // }
 
-export interface ResponseData {
+////////////// Response Data /////////////////
+export interface DataResponses {
+  responses: AiData[];
+}
+
+export interface AiData {
   textAnnotations:    TextAnnotation[];
   fullTextAnnotation: FullTextAnnotation;
 }
@@ -100,4 +105,31 @@ export interface TextAnnotation {
   locale?:      string;
   description:  string;
   boundingPoly: Bounding;
+}
+
+///////////// Error Respones //////////////
+export interface ErrorResponse {
+  code:    number;
+  message: string;
+  status:  string;
+  details: Detail[];
+}
+
+export interface Detail {
+  "@type":  string;
+  reason:   string;
+  metadata: Metadata;
+}
+
+export interface Metadata {
+  method:  string;
+  service: string;
+}
+
+export const isErrorResponse = (response: any): response is ErrorResponse => {
+  return response 
+  && response.code && typeof(response.code) == "number"
+  && response.message && typeof(response.message) == "string"
+  && response.status && typeof(response.status) == "string"
+  && response.details
 }

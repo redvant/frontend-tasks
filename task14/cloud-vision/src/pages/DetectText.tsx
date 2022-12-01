@@ -5,11 +5,11 @@ import useProcessImageService from "../hooks/useProcessImageService";
 
 function DetectText() {
   const { fileTypes, file, handleChange } = useDropFiles();
-  const { aiData, handleProcessImage, cleanupAiData } =
+  const { aiData, handleProcessImage, cleanupFetchData } =
     useProcessImageService(file);
 
   const onNewImage = (newImage: File) => {
-    cleanupAiData();
+    cleanupFetchData();
     handleChange(newImage);
   };
 
