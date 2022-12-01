@@ -1,3 +1,15 @@
+body {
+  --primary-color: #535bf2; 
+}
+
 .link {
   text-decoration: none;
+}
+
+.drop-area {
+  border-color: var(--primary-color) !important;
+}
+
+.drop-area svg {
+  filter: invert(31%) sepia(78%) saturate(3275%) hue-rotate(214deg) brightness(80%) contrast(91%);
 }
