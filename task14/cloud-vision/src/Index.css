@@ -6,6 +6,11 @@ body {
   text-decoration: none;
 }
 
+.highlight {
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
 .drop-area {
   border-color: var(--primary-color) !important;
 }
