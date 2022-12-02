@@ -21,4 +21,5 @@ body {
 
 .image-canvas {
   max-height: 80vh;
+  max-width: 95vw;
 }
