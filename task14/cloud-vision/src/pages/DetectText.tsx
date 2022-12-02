@@ -2,16 +2,21 @@ import { Box, Typography, Button } from "@mui/material";
 import { FileUploader } from "react-drag-drop-files";
 import useDropFiles from "../hooks/useDropFiles";
 import useProcessImageService from "../hooks/useProcessImageService";
+import ErrorDialog from "../components/ErrorDialog";
 
 function DetectText() {
   const { fileTypes, file, handleChange } = useDropFiles();
-  const { aiData, handleProcessImage, cleanupFetchData } =
+  const { aiData, fetchError, handleProcessImage, cleanupFetchData } =
     useProcessImageService(file);
 
   const onNewImage = (newImage: File) => {
     cleanupFetchData();
     handleChange(newImage);
   };
+
+  const closeErrorDialog = () => {
+    cleanupFetchData();
+  }
 
   return (
     <Box
@@ -44,6 +49,7 @@ function DetectText() {
           </span>
         </Typography>
       ) : null}
+      <ErrorDialog handleClose={closeErrorDialog} message={fetchError?.message} open={fetchError != null} />
     </Box>
   );
 }

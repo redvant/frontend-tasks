@@ -1,36 +1,3 @@
-export interface RequestData {
-  requests: Request[];
-}
-
-export interface Request {
-  features: Feature[];
-  image:    Image;
-}
-
-export interface Feature {
-  type: string;
-}
-
-export interface Image {
-  content: string;
-}
-
-// export interface RequestData {
-//   requests: [
-//     {
-//       features: [
-//         {
-//           type: string,
-//         },
-//       ],
-//       image: {
-//         content: string,
-//       },
-//     },
-//   ],
-// }
-
-////////////// Response Data /////////////////
 export interface DataResponses {
   responses: AiData[];
 }
@@ -105,31 +72,4 @@ export interface TextAnnotation {
   locale?:      string;
   description:  string;
   boundingPoly: Bounding;
-}
-
-///////////// Error Respones //////////////
-export interface ErrorResponse {
-  code:    number;
-  message: string;
-  status:  string;
-  details: Detail[];
-}
-
-export interface Detail {
-  "@type":  string;
-  reason:   string;
-  metadata: Metadata;
-}
-
-export interface Metadata {
-  method:  string;
-  service: string;
-}
-
-export const isErrorResponse = (response: any): response is ErrorResponse => {
-  return response 
-  && response.code && typeof(response.code) == "number"
-  && response.message && typeof(response.message) == "string"
-  && response.status && typeof(response.status) == "string"
-  && response.details
 }

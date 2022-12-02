@@ -1,4 +1,4 @@
-import { RequestData } from "./ProcessImageInterface";
+import { RequestData } from "./interfaces/RequestData";
 
 const fetchAiData = async (data: RequestData) => {
   const response = await fetch(import.meta.env.VITE_API_URL, {
