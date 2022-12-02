@@ -3,6 +3,7 @@ import { FileUploader } from "react-drag-drop-files";
 import useDropFiles from "../hooks/useDropFiles";
 import useProcessImageService from "../hooks/useProcessImageService";
 import ErrorDialog from "../components/ErrorDialog";
+import Canvas from "../components/Canvas";
 
 function DetectText() {
   const { fileTypes, file, handleChange } = useDropFiles();
@@ -16,7 +17,7 @@ function DetectText() {
 
   const closeErrorDialog = () => {
     cleanupFetchData();
-  }
+  };
 
   return (
     <Box
@@ -41,15 +42,18 @@ function DetectText() {
           Process Image
         </Button>
       </Box>
+      {file ? <Canvas image64={file} detectionData={aiData} /> : null}
       {aiData ? (
         <Typography variant="h6">
           Text Detected:{" "}
-          <span className="highlight">
-            {aiData.fullTextAnnotation.text}
-          </span>
+          <span className="highlight">{aiData.fullTextAnnotation.text}</span>
         </Typography>
       ) : null}
-      <ErrorDialog handleClose={closeErrorDialog} message={fetchError?.message} open={fetchError != null} />
+      <ErrorDialog
+        handleClose={closeErrorDialog}
+        message={fetchError?.message}
+        open={fetchError != null}
+      />
     </Box>
   );
 }

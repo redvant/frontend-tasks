@@ -18,3 +18,7 @@ body {
 .drop-area svg {
   filter: invert(31%) sepia(78%) saturate(3275%) hue-rotate(214deg) brightness(80%) contrast(91%);
 }
+
+.image-canvas {
+  max-height: 80vh;
+}
